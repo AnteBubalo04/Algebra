@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novosti1</title>
+    <link rel ="stylesheet" href="/CSS/Novosti123.css">
+    <link rel="stylesheet" href="/CSS/Kontakt.css">
+    <script src="https://kit.fontawesome.com/af273dd4e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a id = "Prijavise" href="Prijavise.html" class="nav-link">Prijavi se<i class="fa-sharp fa-solid fa-right-to-bracket fa-xs" style="color: #412ed1;"></i></a>
+        <a href="/HTML/index.html" class="nav-link"><i class="fa-sharp fa-solid fa-house fa-2xs" style="color: #FFD43B;"></i>Početna</a>
+        <a href="/HTML/Onama.html" class="nav-link"><i class="fa-regular fa-comments fa-xs" style="color: #FFD43B;"></i>O nama</a>
+        <a href="/HTML/Novosti.html" class="nav-link"><i class="fa-solid fa-circle-info fa-2xs" style="color: #FFD43B;"></i>Novosti</a>
+        <a href = "NastavniPlan.html" id = "NastavniPlan" class="nav-link"><i class="fa-solid fa-circle-info fa-2xs" style="color: #FFD43B;"></i>Nastavni Plan</a>
+        <a onclick="otvori()" style = "cursor: pointer;" class="nav-link"><i class="fa-solid fa-envelope fa-xs" style="color: #e6a519;"></i>Kontakt</a>     
+    </div>
+<div class="slikaheader"> 
+    <img src="/SLIKE/novost3.jpg" alt="slikanovost">
+</div>
+<h1 class="Naslov">Stipendijski natječaj šk.god.2018./2019.</h1>
+    <div class="linija"></div>
+
+    <div class="textNovost">
+        Algebra Junior organizira edukativne i zabavne ljetne
+        praznike za sve osnovnoškolce! I ove smo godine
+        pripremili digitalne radionice za djecu čiji je fokus
+        rješavanja raznih problema korištenjem tehnologije,
+        multimedije, digitalnog dizajna i komunikacija te
+        stvaranju sadržaja u svim multimedijskim i softverskim
+        oblicima. Radionice se održavaju u sklopu Digitalnog
+        ljetnog kampa u Crikvenici i Digitalne ljetne škole u
+        Zagrebu kako bismo se družili, zabavljali i učili i na
+        moru i na kontinentu! Na digitalnom kampu i u školi
+        provodit će se dva različita programa koji su
+        namijenjena djeci od 1. do 8. razreda. Ovisno o
+        odabranom terminu, polaznici će prolaziti kroz 1. ili 2.
+        program, a u slučaju pohađanja dvotjednih programa –
+        oba. U prvom programu nađe nindže uče biti glazbeni
+        menadžeri dok su u drugom novinari i kreatori
+        informacija masovnih medija. Provjerite termine, cijene
+        i lokacije škole i kampa na sljedećem linku.
+    </div>
+
+    <div id="popup1" class="popup">
+        
+        <div class="popup-content">
+          <span onclick="zatvori()" class="close-btn">&times;</span>
+          <h2><i class="fa-solid fa-envelope"></i>Kontaktirajte nas</h2>
+          <form id="contact-form" action="https://www.fulek.com/mvc/supit/project-contact-form" method="post" >
+            <label for="fullname">Puno ime</label>
+            <input type="text" id="fullname" name="fullname" >
+      
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" >
+      
+            <label for="importance">Važnost poruke</label>
+            <select id="importance" name="importance">
+              <option value="low">Niska</option>
+              <option value="medium">Srednja</option>
+              <option value="high">Visoka</option>
+            </select>
+      
+            <label for="message">Poruka</label>
+            <textarea id="message" name="message" ></textarea>
+      
+            <label class="checkbox-container">
+              Želim primati obavijesti
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+      
+            <button type="submit">Pošalji</button>
+            <button type="button" onclick="zatvori()" class="cancel-btn">Odustani</button>
+          </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h1>BUDI IZVRSTAN U ONOME ŠTO VOLIŠ</h1>
+        <h2>ZAISKRI</h2>
+      <img src="/SLIKE/zaiskri-bg.jpg" alt="cvijece">
+       </footer>
+
+
+       <script src="/JavaScript/Kontakt.js"></script>
+       <script src="/JavaScript/Token.js"></script>
+</body>

@@ -1,0 +1,373 @@
+body {
+  margin: 0;
+}
+html {
+  /* ZA smooth prijelaz izmedu linkova!! */
+  scroll-behavior: smooth; 
+}
+
+.navbar1 {
+  position: fixed;
+  overflow: hidden;
+  background-color: black;
+  width: 100%;
+  justify-content: space-between;
+  height: 50px;
+  z-index: 1000;
+}
+
+.nav-lijevo {
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  animation: forwards 1s slidein;
+}
+
+.nav-desno {
+  float: right;
+  display: block;
+  color: orange;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  animation: 1sforwards;
+  animation: slideInFromRight 1s;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 13px;
+}
+.slikakampus {
+  object-fit: cover;
+  height: 40vh;
+  width: 100%;
+  z-index: -1;
+  animation: slideInFromTop 1s ease-out forwards;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translatey(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.Naslov {
+  text-align: center;
+  margin-top: 20px;
+  animation: slideUp 1s ease-out forwards;
+}
+
+.linija {
+  height: 3px;
+  background-color: orange;
+  width: 55%;
+  margin: 10px auto;
+  animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(+40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.text {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+  color: #c30e60;
+  padding-bottom: 40px;
+  padding-top: 65px;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(-10px);
+    opacity: 1;
+  }
+  90% {
+    transform: translateX(2.5px);
+  }
+  95% {
+    transform: translateX(-2.5px);
+  }
+}
+
+.tamnije {
+  background-color: #f8f8f8;
+  padding: 50px;
+}
+
+.prvi {
+  margin-bottom: 20px;
+  font-size: 22px;
+  width: 65%;
+  margin: 0 auto;
+  font-family: "Brush Script MT", cursive;
+  padding-bottom: 40px;
+}
+
+.drugi {
+  padding-top: 20px;
+  margin-top: 20px;
+  font-size: 22px;
+  width: 65%;
+  margin: 0 auto;
+  font-family: "Brush Script MT", cursive;
+}
+
+.GRID1 {
+  display: grid;
+  grid-template-columns: 0.8fr repeat(3, 1.2fr) 0.8fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-gap: 20px;
+  padding-top: 20px;
+}
+
+.kartica1 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.kartica2 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.kartica3 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.kartica1,
+.kartica2,
+.kartica3 {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.naslovkartice {
+  margin-top: 0;
+  color: #333;
+}
+
+.linija2 {
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 95%;
+  margin: 10px auto;
+}
+
+.treci {
+  margin-bottom: 20px;
+  font-size: 22px;
+  width: 65%;
+  margin: 0 auto;
+  font-family: "Brush Script MT", cursive;
+  padding-bottom: 40px;
+}
+
+.cetvrti {
+  margin-bottom: 20px;
+  font-size: 22px;
+  width: 65%;
+  margin: 0 auto;
+  font-family: "Brush Script MT", cursive;
+  padding-bottom: 40px;
+}
+.gridVeci {
+  display: grid;
+  grid-template-columns: repeat(3, 0.4fr);
+  grid-template-rows: repeat(3, 2fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  grid-gap: 20px;
+  padding-top: 20px;
+}
+
+.karticagrid {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 5x;
+}
+
+.peti {
+  margin-bottom: 20px;
+  font-size: 22px;
+  width: 65%;
+  margin: 0 auto;
+  font-family: "Brush Script MT", cursive;
+  padding-bottom: 40px;
+}
+.sesti {
+  margin-bottom: 20px;
+  font-size: 22px;
+  width: 65%;
+  margin: 0 auto;
+  font-family: "Brush Script MT", cursive;
+  padding-bottom: 40px;
+}
+
+.gridIkone {
+  display: grid;
+  grid-template-columns: repeat(4, 1.4fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding-top: 20px;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  row-gap: 20px;
+  column-gap: 20px;
+  gap: 20px;
+}
+
+.Ikona {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  height: 25%;
+}
+
+.karticaKarte1 {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 5px;
+  display: block;
+}
+
+.karticaKarte2 {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.karticaMapa {
+  width: 100%;
+  margin-top: 20px;
+}
+.karticaMapa iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  align-self: center;
+}
+
+.parentgridMapa {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url("SLIKE/kakoDoNas.jpg");
+  object-fit: contain;
+  background-size: cover;
+}
+.gridMapa {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 0px;
+  justify-content: center;
+  margin-left: 13%;
+  margin-right: 13%;
+}
+
+.karticaKarte1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.karticaKarte2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.karticaMapa {
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+
+
+.footer {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  text-align: center;
+  position: relative;
+  padding-top: 30px;
+}
+
+.footer img {
+  object-fit: cover;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
+.footer h1 {
+  padding-top: 20px;
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer h2 {
+  position: absolute;
+  font-size: 40px;
+  color: rgb(184, 0, 83);
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+ 
+
+  .slikakampus {
+    height: 30vh;
+  }
+
+  .text,
+  .prvi,
+  .drugi,
+  .treci,
+  .cetvrti,
+  .peti,
+  .sesti {
+    font-size: 18px; 
+    width: 90%; 
+  }
+
+  .GRID1,
+  .gridVeci,
+  .gridIkone,
+  .gridMapa {
+    grid-template-columns: 1fr;
+  }
+
+  .kartica1,
+  .kartica2,
+  .kartica3,
+  .karticagrid,
+  .karticaKarte1,
+  .karticaKarte2,
+  .karticaMapa {
+    width: 100%; 
+  }
+
+  .footer h1,
+  .footer h2 {
+    font-size: 24px; 
+  }
+}

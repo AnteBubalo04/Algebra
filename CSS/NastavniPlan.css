@@ -1,0 +1,139 @@
+body
+{
+    margin:0;
+}
+
+.navbar {
+    height: 50px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.navbar .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #f2f2f2;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav-link {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    outline: none;
+}
+
+
+.footer{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+
+  }
+
+  .footer img{
+    object-fit: cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+  }
+
+  .footer h1 {
+    padding-top: 20px;
+    position: absolute;
+    font-size: 34px;
+    color: white;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .footer h2{
+    position: absolute;
+    font-size: 38px;
+    color: rgb(184, 0, 83);
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  main{
+    margin-top: 30px;
+    min-height: 70vh;
+    overflow: hidden;
+}
+
+.ui-autocomplete li{
+    color: black; 
+}
+
+#title{
+    width: 100%;
+    margin-top: 99px;
+    margin-bottom: 80px;
+}
+
+#title h1 {
+    font-family: 'Segoe UI';
+    text-align: center;
+    border-bottom: 3px solid orange;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+#content{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+    position: relative;
+    animation: leftAnimation 0.5s ease-in both;
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#content input[type="text"]{
+    width: 200%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+table{
+    width: 100%;
+}
+
+tr{
+    border-top: 1px solid #C9C9C9;
+}
+
+th, td{
+    text-align: center;
+    padding: 5px;
+}
+
+tfoot{
+    border-top: 4px solid black;
+    font-weight: bold;
+}
+
+
+
+  
